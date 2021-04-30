@@ -1,28 +1,32 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<div id=app>
+
+  <WeatherGame apiKey="8656d71fb5e84f328c9134151211204"/>
+
+</div>
 </template>
 
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import WeatherGame from './components/WeatherGame.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    WeatherGame
   }
-}
+}   
+
 </script>
+
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Times;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #000000;
   margin-top: 60px;
 }
 </style>
