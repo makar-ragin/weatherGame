@@ -76,7 +76,7 @@ export default {
   methods: {
     fetchAPI() {
       axios
-        .get("http://api.weatherapi.com/v1/current.json?key="+this.apiKey+"&q="+this.q)
+        .get("https://api.weatherapi.com/v1/current.json?key="+this.apiKey+"&q="+this.q)
         .then(response => (
                            this.locationName = response.data.location.name,
                            this.icon = response.data.current.condition.icon,
